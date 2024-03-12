@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/utama.js"></script>
+    <title>Tesbo</title>
+</head>
+<body>
+    <header>
+        <h3>Tesbo.</h3>
+        <img id="burger" onclick="bukamenu()" src="css/Asset/menu.png">
+        <img id="keluar" onclick="kluar()" src="css/Asset/reject.png">
+    </header>
+    
+    <div class="isi">
+        <div id="pertama" class="card">
+            <p>Solusi Kost Ekslusif Dengan Fasilitas Memadai</p>
+            <button>Selengkapnya</button>
+        </div>
+        <div id="food" class="card">
+            <p>Dapatkan Makanan Kesukaanmu Disini</p>
+            <button>Selengkapnya</button>
+        </div>
+        <div id="videobaner"  class="card">
+            <video autoplay loop muted playsinline>
+                <source src="css/Asset/bannervideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+             <h5>Mau Buat Seperti Ini?Disini Aja</h5>
+        </div>
+    </div>
+
+    <div class="pilihan">
+        <div onclick="kekost()" id="pkost" class="pil">
+            <img src="css/Asset/97f088ae-60a3-4dbb-9fdc-37a038a855b8.jpg">
+            <h3>Kost</h3>
+            <img id="ayam"  src="css/Asset/arrow.png">
+        </div>
+        <div onclick="kemakanan()" id="pfood" class="pil">
+            <img src="css/Asset/food.jpeg">
+            <h3>Food</h3>
+            <img id="ayam" src="css/Asset/arrow.png">
+        </div>
+        <div onclick="kecinem()" id="pfoto" class="pil">
+            <img src="css/Asset/Logo Tesbo Project.png">
+            <h3 id="vid">Cinematic</h3>
+            <img id="ayam" src="css/Asset/arrow.png">
+        </div>
+    </div>
+
+    <div id="menus" class="setting">
+        <h2>Menu</h2>
+        <h3 onclick="about()">About us</h3>
+        <h3 onclick="kesosmed()">Social Media</h3>
+        <h3>Developer</h3>
+        <h4>TesboTech All Right Reserved</h4>
+    </div>
+
+</body>
+</html>

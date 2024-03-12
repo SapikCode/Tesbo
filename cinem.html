@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cinem.css">
+    <title>Tesbo</title>
+</head>
+<body>
+    <header>
+        <h3>TesboProject.</h3>
+        <h3 onclick="kehome()">Home</h3>
+    </header>
+   <h1>Preview Cinematic Motor</h1>
+   <video controls>
+    <source src="css/Asset/cinemvarioo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h1 id="lain">Preview Cinematic Lainnya</h1>
+  <video controls>
+    <source src="css/Asset/bannervideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="bawah">
+  <h1 id="kontak">Contact VideoGrapher</h1>
+  <button onclick="kontak()">Whatsapp</button>
+  <button onclick="keig()">Instagram</button>
+  </div>
+</body>
+<script>
+    function kehome(){
+        window.location.href="index.html"
+    }
+
+    function kontak(){
+        window.location.href="https://wa.me/6285246375161"
+    }
+
+    function keig(){
+        window.location.href="https://www.instagram.com/tesbo.project?igsh=ZGNjOWZkYTE3MQ=="
+    }
+
+</script>
+</html>

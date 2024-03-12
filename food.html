@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/food.css">
+    <script src="js/kirim.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Tesbo Food</title>
+</head>
+<body>
+    <div class="atas">
+        <h1>Sedang Lapar?</h1>
+        <h3>Tesbo Food Solusinya</h3>
+    </div>
+    <div class="isi">
+        <div  class="card">
+            <img src="css/Asset/jamur.jpeg">
+            <div class="desc">
+                <h3>Jamur Crispy</h3>
+                <p>Jamur Krispy adalah olahan pangan yang dapat dijadikan sebagai hidangan camilan yang terbuat dari bahan dasar jamur tiram</p>
+                    <h4>Rp 5000 / Pcs</h4>
+                    <button onclick="pesan('Jamur Crispy',5000)">Pesan</button>
+            </div>
+            </div>
+        <div class="card">
+            <img src="css/Asset/kerupuk.jpeg">
+            <div class="desc">
+                <h3>Kerupuk</h3>
+                <p>Kerupuk adalah suatu jenis makanan kering yang terbuat dari bahan- bahan yang mengandung pati cukup tinggi</p>
+                    <h4>Rp 4000 / Pcs</h4>
+                    <button onclick="pesan('Kerupuk',4000)">Pesan</button>
+            </div>
+            </div>
+        <div class="card">
+            <img src="css/Asset/fudgy.jpg">
+            <div class="desc">
+                <h3>Fudgy Brownies</h3>
+                <p>Jamur Krispy adalah olahan pangan yang dapat dijadikan sebagai hidangan camilan yang terbuat dari bahan dasar jamur tiram</p>
+                    <h4>Rp 10000 / Pcs</h4>
+                    <button onclick="pesan('Fudgy Brownies', 10000)">Pesan</button>
+            </div>
+            </div>
+            <div class="card">
+                <img src="css/Asset/fudgy.jpg">
+                <div class="desc">
+                    <h3>Fudgy Brownies</h3>
+                    <p>Jamur Krispy adalah olahan pangan yang dapat dijadikan sebagai hidangan camilan yang terbuat dari bahan dasar jamur tiram</p>
+                        <h4>Rp 10000 / Pcs</h4>
+                        <button onclick="pesan('Fudgy Brownies', 10000)">Pesan</button>
+                </div>
+                </div>
+                <div class="card">
+                    <img src="css/Asset/fudgy.jpg">
+                    <div class="desc">
+                        <h3>Fudgy Brownies</h3>
+                        <p>Jamur Krispy adalah olahan pangan yang dapat dijadikan sebagai hidangan camilan yang terbuat dari bahan dasar jamur tiram</p>
+                            <h4>Rp 10000 / Pcs</h4>
+                            <button onclick="pesan('Fudgy Brownies', 10000)">Pesan</button>
+                    </div>
+                    </div>
+        </div>
+
+        <div id="for" class="form">
+            <img onclick="keluar()" src="css/Asset/reject.png">
+            <h2>Lanjutkan Pemesanan</h2>
+            <input id="namkan" type="text" readonly>
+            <input type="text" id="namapemesan" placeholder="Nama Pemesan" required>
+            <input type="text" id="nohp" placeholder="No Handphone" required>
+            <label for="jumlahan">Jumlah :</label>
+            <input id="jumlahan" type="number" placeholder="jumlah" value="1" required>
+            <label for="hgr">Harga :</label>
+            <input id="hgr" type="text" placeholder="Harga" readonly>
+            <button onclick="bayar()">Bayar</button>
+            
+
+        </div>
+        <div id="maskk" class="mask">
+
+        </div>
+
+        <div id="formbayar" class="bayar">
+            <img src="css/Asset/qris.jpeg">
+            <h4>Scan QR Diatas</h4>
+            <h4 id="bawah">Lakukan Pembayaran Sejumlah :</h4>
+            <h2 id="hargatotal"></h2>
+            <h4 id="sudah">Jika Sudah Tekan Konfirmasi</h4>
+            <button onclick="sendMessage()">Konfirmasi</button>
+        </div>
+</body>
+<script>
+const scrollRevealOption = {
+    origin: "bottom",
+    distance: "300px",
+    duration: 800,
+    delay: 0.5,
+    opacity: 0,
+    scale: 0.8,
+    easing: "cubic-bezier(0.5, 0, 0, 1)",
+    reset: true
+};
+
+
+ScrollReveal().reveal(".card",scrollRevealOption);
+
+const revel = {
+    origin: "top",
+    distance: "300px",
+    duration: 800,
+    delay: 0.5,
+    opacity: 0,
+    scale: 0.8,
+    easing: "cubic-bezier(0.5, 0, 0, 1)",
+    reset: true
+};
+
+
+ScrollReveal().reveal(".atas",revel);
+
+function pesan(nama, harga) {
+            const forma = document.getElementById('for');
+            const mask = document.getElementById('maskk');
+            document.getElementById('namkan').value = nama;
+            goreng = document.getElementById('hgr').value = harga;
+            ayam = document.getElementById('hgr').value ="Rp "+ harga;
+
+            forma.style.transform = "translateY(600px)";
+            mask.style.display = "block";
+        }
+
+        function keluar() {
+            const forma = document.getElementById('for');
+            const mask = document.getElementById('maskk');
+
+            forma.style.transform = "translateY(-600px)";
+            mask.style.display = "none";
+        }
+
+        // Mendapatkan elemen jumlah dan harga
+        const juml = document.getElementById('jumlahan');
+        const harga = document.getElementById('hgr');
+
+        // Menangani perubahan nilai pada elemen jumlah
+        juml.addEventListener("input", function () {
+            // Mengambil nilai jumlah
+            const jumlah = juml.value;
+
+            // Menetapkan nilai total harga ke elemen harga
+            harga.value ="Rp "+ jumlah * goreng; // Ganti dengan harga per item yang sebenarnya (misal: 5000)
+        });
+
+        function bayar(){
+            const forma = document.getElementById('for');
+            const bayar = document.getElementById('formbayar');
+            const totalan = document.getElementById('hargatotal');
+            const harga = document.getElementById('hgr').value;
+            bayar.style.transform = "translateY(650px)";
+            forma.style.transform = "translateY(-600px)";
+            totalan.innerHTML=harga
+        }
+        function konfirm(){
+            const bayar = document.getElementById('formbayar');
+            const mask = document.getElementById('maskk');
+            bayar.style.transform = "translateY(-650px)";
+            mask.style.display = "none";
+        }
+       
+</script>
+</html>

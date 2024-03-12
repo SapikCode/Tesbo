@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/maincss.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Main Menu</title>
+</head>
+<body>
+    <img id="logo" src="css/Asset/Logo Tesbo Group.jpg">
+    <div class="atas">
+        
+        <h1>Welcome To Tesbo</h1>
+
+    </div>
+<div class="isi">
+    <div  id="card1" class="card">
+        <h2>Kost</h2>
+    </div>
+    <div onclick="kefood()" id="card2" class="card">
+        <h2>Food</h2>
+    </div>
+    <div id="card3" class="card">
+        <h2>Photo And Video</h2>
+    </div>
+    
+</div>
+</body>
+<script>
+    const scrollRevealOption = {
+            origin: "bottom",
+            distance: "300px",
+            duration: 500,
+            delay: 0.5,
+            opacity: 0,
+            scale: 0.8,
+            easing: "cubic-bezier(0.5, 0, 0, 1)",
+            reset: true
+        };
+        ScrollReveal().reveal(".isi",scrollRevealOption);
+
+
+        
+        function kefood(){
+            window.location.href="food.html"
+        }
+
+        
+    </script>
+</html>
