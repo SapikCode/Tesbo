@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Red+Hat+Display:wght@300&display=swap');
+
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    z-index: 100;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:70px;
+    border-radius: 15px;
+    align-items: center;
+    shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+}
+
+header img{
+    width: 70px;
+    height: 50px;
+}
+
+header h3{
+    font-size: 25px;
+    font-family:'Red Hat Display', sans-serif;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+#keluar{
+    display: none;
+    width: 40px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+video{
+    border-radius: 20px;
+    margin-bottom: 50px;
+    shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+}
+
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+#lain{
+    margin-top: -30px;
+}
+
+button{
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#kontak{
+    margin-top: -30px;
+}
+
+button{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+

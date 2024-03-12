@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "ayam";
+    font-weight: 400;
+    src: url("Fonts/static/Syne-SemiBold.ttf") format(truetype);
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url("Fonts/Poppins-ExtraLight.ttf") format(truetype);
+  }
+
+  body{
+    align-items: center;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow:hidden;
+  }
+
+  .atas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .atas h1{
+    border-radius: 15px;
+    margin-top: 100px;
+    font-size: 70px;
+    font-family:'ayam';
+  }
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 130px;
+}
+
+
+
+  .card{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: white;
+    width: 300px;
+    margin-right: 20px;
+    height: 250px;
+    border: 2px solid white;
+    box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    opacity: 90%;
+    transition: transform 0.3s;
+  }
+
+  .card:hover{
+    transform:translateY(-3px);
+  }
+
+  .card h2{
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    width: 110%;
+    margin-left: -2px;
+    padding: 5px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+
+  }
+
+  .isi{
+    margin-top: 6%;;
+    border-radius: 20px;
+   background-image: url(Asset/background.jpg);
+   background-size: cover;
+   background-position-y:center;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 3.5%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  #card1{
+    background-image: url(Asset/97f088ae-60a3-4dbb-9fdc-37a038a855b8.jpg);
+    background-position-y: -50px;
+    background-size: cover;
+  }
+
+  #card2{
+    background-image: url(Asset/food.jpeg);
+    background-position-y: -50px;
+    background-size: cover;
+  }
+
+  #card3{
+    background-image: url(Asset/Logo\ Tesbo\ Project.png);
+    background-size: contain;
+    background-position-x: 25px;
+    background-position-y:-10px ;
+  }
+  
+

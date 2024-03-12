@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Red+Hat+Display:wght@300&display=swap');
+
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    z-index: 100;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:70px;
+    width: 73%;
+    border-radius: 15px;
+    align-items: center;
+    shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 2px 7px 12px -3px rgba(0,0,0,0.53);
+}
+
+header img{
+    width: 70px;
+    height: 50px;
+}
+
+header h3{
+    font-size: 25px;
+    font-family:'Red Hat Display', sans-serif;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+#keluar{
+    display: none;
+    width: 40px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+table {
+    margin-top: 20px;
+    width: 30%;
+    overflow: auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 10px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: 300;
+    width: 10%;
+    overflow: scroll;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pertanyaan{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+
+.pertanyaan h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+#awal{
+    margin-top: 20px
+}
+
+.isitable{
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+
